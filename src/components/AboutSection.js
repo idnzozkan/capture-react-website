@@ -2,13 +2,14 @@ import React from "react";
 
 // Style
 import styled from "styled-components";
+import { Section, Description, Image, Hide } from "../styles";
 
 // Image
 import home1 from "../img/home1.png";
 
 const AboutSection = () => {
   return (
-    <About>
+    <Section>
       <Description>
         <div className="title">
           <Hide>
@@ -33,40 +34,8 @@ const AboutSection = () => {
       <Image>
         <img src={home1} alt="About us" />
       </Image>
-    </About>
+    </Section>
   );
 };
-
-const About = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 90vh;
-  padding: 5rem 10rem;
-  color: white;
-`;
-
-const Description = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-
-  h2 {
-    font-weight: lighter;
-  }
-`;
-
-const Image = styled.div`
-  flex: 1;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-  }
-`;
-
-const Hide = styled.div`
-  overflow: hidden;
-`;
 
 export default AboutSection;
