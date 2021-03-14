@@ -1,7 +1,6 @@
 import React from "react";
 
 // Style
-import styled from "styled-components";
 import { Section, Description, Image, Hide } from "../styles";
 
 // Image
