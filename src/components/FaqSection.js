@@ -1,6 +1,7 @@
 import React from "react";
 import Toggle from "./Toggle";
-
+import { AnimateSharedLayout, motion } from "framer-motion";
+import { fade } from "../animation";
 // Styles
 import styled from "styled-components";
 import { Section } from "../styles";
@@ -11,52 +12,64 @@ const FaqSection = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <Toggle>
-        <div className="question">
-          <h4>How Do I Start?</h4>
-          <div className="answer">
+      <AnimateSharedLayout>
+        <Toggle title="How Do I Start?">
+          <motion.div
+            variants={fade}
+            initial="hidden"
+            animate="show"
+            className="answer"
+          >
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
               minima!
             </p>
-          </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <div className="question">
-        <h4>Daily Schedule</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-            minima!
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Different Payment Methods</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-            minima!
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>What Products Do You Offer?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-            minima!
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+          </motion.div>
+        </Toggle>
+        <Toggle title="Daily Schedule">
+          <motion.div
+            variants={fade}
+            initial="hidden"
+            animate="show"
+            className="answer"
+          >
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              minima!
+            </p>
+          </motion.div>
+        </Toggle>
+        <Toggle title="Different Payment Methods">
+          <motion.div
+            variants={fade}
+            initial="hidden"
+            animate="show"
+            className="answer"
+          >
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              minima!
+            </p>
+          </motion.div>
+        </Toggle>
+        <Toggle title="What Products Do You Offer?">
+          <motion.div
+            variants={fade}
+            initial="hidden"
+            animate="show"
+            className="answer"
+          >
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              minima!
+            </p>
+          </motion.div>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };
