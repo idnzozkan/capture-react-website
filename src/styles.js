@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const Section = styled.div`
+export const Section = styled(motion.div)`
   display: flex;
   justify-content: space-around;
   align-items: center;
