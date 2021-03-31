@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+// Scroll to the top when navigate to this page
+import ScrollTop from "../components/ScrollTop";
+
 // Images
 import athlete from "../img/athlete-small.png";
 import theracer from "../img/theracer-small.png";
@@ -72,6 +75,7 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };
