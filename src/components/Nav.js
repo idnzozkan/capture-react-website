@@ -26,12 +26,17 @@ const Nav = () => {
 const StyledNav = styled.nav`
   display: flex;
   margin: auto;
-  background: #282828;
+  background: rgba(40, 40, 40, 0.98);
+  backdrop-filter: blur(10rem);
+  -webkit-backdrop-filter: blur(10rem);
   min-height: 10vh;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
   margin: auto;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 
   #logo {
     font-family: "Lobster", cursive;
