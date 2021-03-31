@@ -108,10 +108,10 @@ const Hide = styled.div`
 // Colorful Page Transition Frames
 const Frame1 = styled(motion.div)`
   position: fixed;
-  top: 0;
+  top: 10%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #fffebf;
   z-index: 2;
 `;
