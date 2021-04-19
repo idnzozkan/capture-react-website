@@ -77,6 +77,10 @@ const Awards = styled.div`
   align-items: center;
   min-height: 80vh;
   margin: 5rem 10rem;
+
+  @media (max-width: 1500px) {
+    flex-direction: column;
+  }
 `;
 
 const ImageDisplay = styled.div`

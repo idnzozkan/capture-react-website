@@ -68,6 +68,11 @@ const ContactStyle = styled(motion.div)`
   color: #353535;
   min-height: 90vh;
 
+  @media (max-width: 1500px) {
+    padding: 5rem;
+    font-size: 1rem;
+  }
+
   a {
     text-decoration: none;
     color: inherit;
